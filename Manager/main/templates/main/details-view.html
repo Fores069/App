@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block title %}Home{% endblock title %}
+</head>
+<body>
+    {% block content %}
+    <div class="wrapper">
+        <div class="alert alert-warning">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.description }}</p>
+            <a href="{% url 'task-update' post.id %}"><button class="btn btn-outline-secondary">Update</button></a>
+            <a href="{% url 'task-delete' post.id %}"><button class="btn btn-danger">Завершено</button></a>
+        </div>
+    </div>
+    {% endblock content%}
+</body>
+</html>

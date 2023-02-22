@@ -1,0 +1,38 @@
+header{
+    max-width:500px;
+    margin:10px auto;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.logo, .menu{
+    display:inline-block;
+    vertical-align:middle
+}
+.menu li{
+    display:inline-block;
+    vertical-align:middle
+}
+.logo{
+    font-size:34px;
+    margin-right:34px
+}
+strong{
+    color:#0A58CA
+}
+.menu li a{
+    vertical-align:middle;
+    text-decoration:none;
+    font-size:19px;
+    margin-right:22px;
+    color:black
+}
+.wrapper{
+    max-width:500px;
+    margin:0 auto;
+    padding-left:10px;
+    padding-right:10px;
+}
+.delete{
+    text-align:center
+}

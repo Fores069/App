@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block title %}Create{% endblock title %}
+</head>
+<body>
+    {% block content %}
+        <div class="wrapper">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.title }}
+                <label><h2>Задача</h2></label>
+                {{ form.description }}
+
+                <button type="submit" class="btn btn-outline-primary">Добавить задачу</button>
+
+
+            </form>
+        </div>
+    {% endblock content%}
+</body>
+</html>
